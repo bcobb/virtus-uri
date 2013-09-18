@@ -8,6 +8,7 @@ describe 'Using Virtus::URI' do
 
     attribute :url, URI, default: URI('http://example.com')
     attribute :referer, URI
+    attribute :history, Array[URI]
   end
 
   it 'coerces http URLs' do
@@ -34,6 +35,13 @@ describe 'Using Virtus::URI' do
   it 'defaults to nil unless otherwise specified' do
     expect(Request.new.url).to eql(URI('http://example.com'))
     expect(Request.new.referer).to be_nil
+  end
+
+  it 'works with arrays' do
+    request = Request.new(history: ['http://example.com'])
+
+    expect(request.history.first).to be_a(URI::HTTP)
+    expect(String(request.history.first)).to eql('http://example.com')
   end
 
 end
