@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Brian Cobb"]
   spec.email         = ["bcobb@uwalumni.com"]
   spec.summary       = "Add a URI attribute type to Virtus."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/bcobb/virtus-uri"
   spec.license       = "MIT"
 
   spec.files         = Dir['lib/**/*.rb'] + ['README.markdown']
