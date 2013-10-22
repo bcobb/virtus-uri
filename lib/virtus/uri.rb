@@ -1,12 +1,10 @@
 require 'uri'
 require 'virtus'
 
-module Virtus
-  class URI < Attribute::Object
-    primitive ::URI
+class Uri < Virtus::Attribute
 
-    def coerce(value)
-      URI(value)
-    end
+  def coerce(value)
+    URI(value) if value
   end
+
 end

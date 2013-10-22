@@ -1,7 +1,5 @@
 require 'virtus'
 
-module Virtus
-  class URI < Attribute::Object
-    VERSION = "0.0.2"
-  end
+class Uri < Virtus::Attribute
+  VERSION = "0.1.0"
 end

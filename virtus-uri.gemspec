@@ -5,7 +5,7 @@ require 'virtus/uri/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "virtus-uri"
-  spec.version       = Virtus::URI::VERSION
+  spec.version       = Uri::VERSION
   spec.authors       = ["Brian Cobb"]
   spec.email         = ["bcobb@uwalumni.com"]
   spec.summary       = "Add a URI attribute type to Virtus."
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
 
-  spec.add_dependency "virtus", "< 1.0.0"
+  spec.add_dependency "virtus", "~> 1.0.0"
 end
