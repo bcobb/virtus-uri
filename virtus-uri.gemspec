@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/bcobb/virtus-uri"
   spec.license       = "MIT"
 
-  spec.files         = Dir['lib/**/*.rb'] + ['README.markdown']
-  spec.files         = Dir['spec/**/*.rb']
+  spec.files         = Dir['lib/**/*.rb'] + ['README.md']
+  spec.test_files    = Dir['spec/**/*.rb']
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
